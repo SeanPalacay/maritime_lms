@@ -1,0 +1,98 @@
+<!-- Main Wrapper -->
+<div class="main-wrapper log-wrap">
+
+  <div class="row">
+
+    <!-- Login Banner -->
+    <div class="col-md-6 login-bg">
+      <div class="row w-100">
+        <div class="col-md-12">
+          <owl-carousel-o [options]="welcomeLoginOwlOptions">
+            @for (slide of welcomeLogin; track slide) {
+              <ng-template carouselSlide>
+                <div class="welcome-login">
+                  <div class="login-banner">
+                    <img [src]="slide.img" class="img-fluid" alt="Logo">
+                  </div>
+                  <div class="mentor-course text-center">
+                    <h2>{{slide.content1}}<br>{{slide.content2}}</h2>
+                    <p>{{slide.paragraph}}</p>
+                  </div>
+                </div>
+              </ng-template>
+            }
+          </owl-carousel-o>
+        </div>
+
+      </div>
+    </div>
+    <!-- /Login Banner -->
+
+    <div class="col-md-6 login-wrap-bg">
+
+      <!-- Login -->
+      <div class="login-wrapper">
+        <div class="loginbox">
+          <div class="w-100">
+            <div class="img-logo">
+              <img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
+              <div class="back-home">
+                <a [routerLink]="routes.home">Back to Home</a>
+              </div>
+            </div>
+            <h1>Sign into Your Account</h1>
+            <div class="input-block">
+              <label for="email" class="form-control-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email address">
+            </div>
+            <div class="input-block">
+              <label for="password" class="form-control-label">Password</label>
+              <div class="pass-group">
+                <input [type]="password" class="form-control pass-input"
+                  placeholder="Enter your password">
+                  <span>@if (show) {
+                    <i class="toggle-password feather icon-eye" (click)="onClick()" (keydown)="onClick()" tabindex="1"
+                    ></i>
+                  }</span>
+                  <span>@if (!show) {
+                    <i class="toggle-password feather icon-eye-off" (click)="onClick()" (keydown)="onClick()" tabindex="1"
+                    ></i>
+                  }</span>
+                </div>
+              </div>
+              <div class="forgot">
+                <span><a class="forgot-link" [routerLink]="routes.forgot_password">Forgot Password
+                ?</a></span>
+              </div>
+              <div class="form-check remember-me">
+                <label class="form-check-label mb-0"> Remember me
+                  <input class="form-check-input input-box" type="checkbox" name="radio">
+                </label>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary btn-start" type="submit" (click)="directIndex()">Sign
+                In</button>
+              </div>
+            </div>
+          </div>
+          <div class="google-bg text-center">
+            <span><a href="javascript:void(0)">Or sign in with</a></span>
+            <div class="sign-google">
+              <ul>
+                <li><a href="javascript:void(0)"><img src="assets/img/net-icon-01.png" class="img-fluid"
+                alt="Logo"> Sign In using Google</a></li>
+                <li><a href="javascript:void(0)"><img src="assets/img/net-icon-02.png" class="img-fluid"
+                alt="Logo">Sign In using Facebook</a></li>
+              </ul>
+            </div>
+            <p class="mb-0">New User ? <a [routerLink]="routes.register">Create an Account</a></p>
+          </div>
+        </div>
+        <!-- /Login -->
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- /Main Wrapper -->

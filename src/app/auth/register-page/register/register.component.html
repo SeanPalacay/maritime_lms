@@ -1,0 +1,128 @@
+<!-- Main Wrapper -->
+<div class="main-wrapper log-wrap">
+  <div class="row">
+    <!-- Login Banner -->
+    <div class="col-md-6 login-bg">
+      <div class="row w-100">
+        <div class="col-md-12">
+          <owl-carousel-o [options]="registerOwlOptions">
+            @for (slide of register; track slide) {
+              <ng-template carouselSlide>
+                <div class="welcome-login">
+                  <div class="login-banner">
+                    <img [src]="slide.img" class="img-fluid" alt="Logo" />
+                  </div>
+                  <div class="mentor-course text-center">
+                    <h2>{{ slide.content1 }}<br />{{ slide.content2 }}</h2>
+                    <p>{{ slide.paragraph }}</p>
+                  </div>
+                </div>
+              </ng-template>
+            }
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+    <!-- /Login Banner -->
+
+    <div class="col-md-6 login-wrap-bg">
+      <!-- Login -->
+      <div class="login-wrapper">
+        <div class="loginbox">
+          <div class="img-logo">
+            <img src="assets/img/logo.svg" class="img-fluid" alt="Logo" />
+            <div class="back-home">
+              <a [routerLink]="routes.home">Back to Home</a>
+            </div>
+          </div>
+          <h1>Sign up</h1>
+          <div class="input-block">
+            <label for="full-name" class="form-control-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your Full Name" />
+          </div>
+          <div class="input-block">
+            <label for="email" class="form-control-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email address" />
+          </div>
+          <div class="input-block">
+            <label for="password" class="form-control-label">Password</label>
+            <div class="pass-group" id="passwordInput">
+              <input [type]="password" class="form-control pass-input" placeholder="Enter your password"
+                [(ngModel)]="registerFormCustom.password"
+                (input)="onChangePassword(registerFormCustom.password)" (input)="onInputChange()" />
+                <span>@if (show) {
+                  <i class="toggle-password feather icon-eye" (click)="onClick()" (keydown)="onClick()" tabindex="1"
+                  ></i>
+                }</span>
+                            <span><i class="feather ocpn-check pass-checked" [ngClass]="{
+                    active: passwordResponce.passwordResponceKey === '3'
+                  }"></i></span>
+                <span>@if (!show) {
+                  <i class="toggle-password feather icon-eye-off" (click)="onClick()" (keydown)="onClick()" tabindex="1"
+                  ></i>
+                }</span>
+              </div>
+                        <div class="password-strength" [ngClass]="{
+                'poor-active': passwordResponce.passwordResponceKey === '0',
+                'avg-active': passwordResponce.passwordResponceKey === '1',
+                'strong-active': passwordResponce.passwordResponceKey === '2',
+                'heavy-active': passwordResponce.passwordResponceKey === '3'
+              }" id="passwordStrength">
+                <span id="poor" class="active"></span>
+                <span id="weak" class="active"></span>
+                <span id="strong" class="active"></span>
+                <span id="heavy" class="active"></span>
+              </div>
+                        <div id="passwordInfo" [ngClass]="{
+                weak: passwordResponce.passwordResponceKey === '0',
+                average: passwordResponce.passwordResponceKey === '1',
+                good: passwordResponce.passwordResponceKey === '2',
+                great: passwordResponce.passwordResponceKey === '3'
+              }">
+                @if (typingStarted && passwordResponce.passwordResponceKey === '0') {
+                  <img alt="img" [src]="passwordResponce.passwordResponceImage"
+                    />
+                }
+                {{ passwordResponce.passwordResponceText }}
+              </div>
+            </div>
+
+            <div class="form-check remember-me">
+              <label class="form-check-label mb-0">
+                <input class="form-check-input input-box-auth" type="checkbox" name="remember" />
+                I agree to the
+                <a [routerLink]="routes.page_term_condition">Terms of Service</a> and
+                <a [routerLink]="routes.page_privacy_policy">Privacy Policy.</a>
+              </label>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-primary btn-start" type="submit" [routerLink]="routes.login">
+                Create Account
+              </button>
+            </div>
+          </div>
+          <div class="google-bg text-center">
+            <span><a href="javascript:void(0)">Or sign in with</a></span>
+            <div class="sign-google">
+              <ul>
+                <li>
+                  <a href="javascript:void(0)"><img src="assets/img/net-icon-01.png" class="img-fluid"
+                    alt="Logo" />
+                  Sign In using Google</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><img src="assets/img/net-icon-02.png" class="img-fluid"
+                  alt="Logo" />Sign In using Facebook</a>
+                </li>
+              </ul>
+            </div>
+            <p class="mb-0">
+              Already have an account? <a [routerLink]="routes.login">Sign in</a>
+            </p>
+          </div>
+        </div>
+        <!-- /Login -->
+      </div>
+    </div>
+  </div>
+  <!-- /Main Wrapper -->

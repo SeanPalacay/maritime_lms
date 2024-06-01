@@ -1,0 +1,19 @@
+@import "swiper/scss/effect-coverflow";
+
+.mat-select-panel {
+
+    .mat-option {
+        height: 2em !important;
+        &:hover{
+            &:not(.mat-option-disabled){
+                background: #7B1FFE;
+                color: #fff;
+            }
+        }
+        &.mat-selected{
+            &:hover {
+                background: #7B1FFE;
+            }
+        }
+    }
+}

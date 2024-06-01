@@ -1,0 +1,1491 @@
+<app-header></app-header>
+<!-- Home Banner -->
+<section class="home-three-slide d-flex align-items-center">
+  <div class="container">
+    <div class="row ">
+      <div class="col-xl-6 col-lg-8 col-md-12 col-12" data-aos="fade-down">
+        <div class="home-three-slide-face">
+          <div class="home-three-slide-text">
+            <h5>The Leader in Online Learning</h5>
+            <h1>Engaging <span>&</span>  Accessible Online Courses For All</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et</p>
+          </div>
+          <div class="banner-three-content">
+            <form>
+              <div class="form-inner-three">
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Search School, Online eductional centers, etc">
+                  <span class="drop-detail-three">
+                    <mat-select class="select"  [(value)]="selected">
+                      <mat-option value="1">Select category</mat-option>
+                      <mat-option value="angular">Angular</mat-option>
+                      <mat-option value="nodejs">Node Js</mat-option>
+                      <mat-option value="react">React</mat-option>
+                      <mat-option value="python">Python</mat-option>
+
+                    </mat-select>
+                  </span>
+                  <button class="btn btn-three-primary sub-btn" type="submit" (click)="directPath()"><i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-4 col-md-6 col-12"  data-aos="fade-up">
+        <div class="girl-slide-img aos">
+          <img class="img-fluid" src="assets/img/slider/home-slider.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Home Banner -->
+
+<!--Online Courses -->
+<section class="section student-course home-three-course">
+  <div class="container">
+    <div class="course-widget-three">
+      <div class="row">
+        @for (data of counter; track data) {
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up">
+            <div class="course-details-three">
+              <div class="align-items-center">
+                <div class="course-count-three course-count ms-0">
+                  <div class="course-img">
+                    <img class="img-fluid" src="assets/img/icon-three/course-0{{data.id}}.svg" alt="">
+                  </div>
+                  <div class="course-content-three">
+                    <h4 [class]="data.class"><span [countUp]="data.counter" [options]="{ enableScrollSpy: true }">0</span>{{data.end}}</h4>
+                    <p>{{data.title}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Online Courses -->
+
+<!-- Master skills Career -->
+<section class="master-skill-three">
+  <div class="master-three-vector">
+    <img class="ellipse-right img-fluid" src="assets/img/bg/pattern-01.png" alt="">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12" data-aos="fade-right">
+        <div class="master-three-images">
+          <div class="master-three-left">
+            <img class="img-fluid" src="assets/img/students/career.png" alt="image-banner" title="image-banner">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-lg-6 col-md-12" data-aos="fade-left">
+        <div class="home-three-head" data-aos="fade-up">
+          <h2>Master the skills to drive your career</h2>
+        </div>
+        <div class="home-three-content" data-aos="fade-up">
+          <p>Get certified, master modern tech skills, and level up your career whether you’re starting out or a seasoned pro. 95% of eLearning learners report our hands-on content directly helped their careers.</p>
+        </div>
+        <div class="skils-group">
+          <div class="row">
+            <div class="col-lg-6 col-xs-12 col-sm-6" data-aos="fade-down">
+              <div class="skils-icon-item">
+                <div class="skils-icon">
+                  <img class="img-fluid" src="assets/img/icon-three/career-01.svg" alt="certified">
+                </div>
+                <div class="skils-content">
+                  <p class="mb-0">Get certified with 100+ certification courses</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xs-12 col-sm-6" data-aos="fade-up">
+              <div class="skils-icon-item">
+                <div class="skils-icon">
+                  <img class="img-fluid" src="assets/img/icon-three/career-02.svg" alt="Build skills">
+                </div>
+                <div class="skils-content">
+                  <p class="mb-0">Build skills your way, from labs to courses</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xs-12 col-sm-6" data-aos="fade-right">
+              <div class="skils-icon-item">
+                <div class="skils-icon">
+                  <img class="img-fluid" src="assets/img/icon-three/career-03.svg" alt="Stay Motivated">
+                </div>
+                <div class="skils-content">
+                  <p class="mb-0">Stay motivated with engaging instructors</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xs-12 col-sm-6" data-aos="fade-left">
+              <div class="skils-icon-item">
+                <div class="skils-icon">
+                  <img class="img-fluid" src="assets/img/icon-three/career-04.svg" alt="latest cloud">
+                </div>
+                <div class="skils-content">
+                  <p class="mb-0">Keep up with the latest in cloud</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Master skills Career -->
+
+<!-- Favourite Course -->
+<section class="home-three-favourite">
+  <div class="container">
+    <div class="row">
+      <div class="container">
+        <div class="home-three-head section-header-title" data-aos="fade-up">
+          <div class="row align-items-center d-flex justify-content-between">
+            <div class="col-lg-8 col-sm-12">
+              <h2>Choose favourite Course from top Category</h2>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <div class="see-all">
+                <a [routerLink]="routes.page_course_details">See all<span class="see-all-icon"><i class="fas fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <owl-carousel-o [options]="courseOption" class="home-three-favourite-carousel">
+          <ng-container >
+            @for (data of favourite; track data) {
+              <ng-template carouselSlide>
+                <div class="favourite-box" data-aos="fade-down">
+                  <div class="favourite-item flex-fill">
+                    <div class="categories-icon">
+                      <img class="img-fluid" src="assets/img/category/category-{{data.id}}.svg" alt="{{data.title}}">
+                    </div>
+                    <div class="categories-content course-info">
+                      <h3>{{data.title}}</h3>
+                    </div>
+                    <div class="course-instructors">
+                      <div class="instructors-info">
+                        <p class="me-4">Instructors</p>
+                        <ul class="instructors-list">
+                          <li>
+                            <a href="javascript:void(0);" tooltip="leader 1" placement="top"><img src="assets/img/profiles/avatar-01.jpg" alt="img"></a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" tooltip="leader 2" placement="top"><img src="assets/img/profiles/avatar-02.jpg" alt="img"></a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" tooltip="leader 3" placement="top"><img src="assets/img/profiles/avatar-03.jpg" alt="img"></a>
+                          </li>
+                          <li class="more-set">
+                            <a href="javascript:void(0);">80+</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            }
+          </ng-container>
+        </owl-carousel-o>
+      </div>
+    </div>
+    <!-- /Favourite Course -->
+  </div>
+</section>
+<!-- Favourite Course -->
+
+<!-- Courses -->
+<section class="home-three-courses">
+  <div class="container">
+    <div class="favourite-course-sec">
+      <div class="row">
+        <div class="home-three-head section-header-title" data-aos="fade-up">
+          <div class="row align-items-center d-flex justify-content-between">
+            <div class="col-lg-6 col-sm-8">
+              <h2>Courses</h2>
+            </div>
+            <div class="col-lg-6 col-sm-4">
+              <div class="see-all">
+                <a [routerLink]="routes.page_course_details">See all<span class="see-all-icon"><i class="fas fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="all-corses-main">
+          <div class="tab-content">
+            <div class="nav tablist-three" role="tablist">
+
+              <a class="nav-tab active me-3" data-bs-toggle="tab" href="#alltab" role="tab">All</a>
+
+              <a class="nav-tab me-3" data-bs-toggle="tab" href="#mostpopulartab" role="tab">Most popular</a>
+
+              <a class="nav-tab me-3" data-bs-toggle="tab" href="#businesstab" role="tab">Business</a>
+
+              <a class="nav-tab me-3" data-bs-toggle="tab" href="#designtab" role="tab">Design</a>
+
+              <a class="nav-tab me-3" data-bs-toggle="tab" href="#designtab" role="tab">Music</a>
+
+              <a class="nav-tab me-3" data-bs-toggle="tab" href="#programmingtab" role="tab">Programming</a>
+
+              <a class="nav-tab me-3" data-bs-toggle="tab" href="#databasetab" role="tab">Database</a>
+
+            </div>
+
+            <div class="tab-content">
+
+              <!-- All -->
+              <div class="tab-pane fade active show" id="alltab" role="tabpanel">
+                <div class="all-course">
+                  <div class="row">
+
+                    <!-- Col -->
+                    @for (data of tab1; track data) {
+                      <div class="col-xl-3 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                        <div class="course-box-three">
+                          <div class="course-three-item">
+                            <div class="course-three-img">
+                              <a [routerLink]="routes.page_course_details">
+                                <img class="img-fluid" alt="" src="assets/img/course/{{data.courseimg}}">
+                              </a>
+                              <div class="heart-three">
+                                <a href="javascript:void(0);"><i class="fa-regular fa-heart"></i></a>
+                              </div>
+                            </div>
+                            <div class="course-three-content">
+                              <div class="course-group-three">
+                                <div class="group-three-img">
+                                  <a [routerLink]="routes.instructor_instructor_profile"><img src="assets/img/user/{{data.avatar}}" alt="" class="img-fluid"></a>
+                                </div>
+                              </div>
+                              <div class="course-three-text">
+                                <a [routerLink]="routes.page_course_details">
+                                  <p>{{data.title}}</p>
+                                  <h3 class="title instructor-text">{{data.content}}</h3>
+                                </a>
+                              </div>
+                              <div class="student-counts-info d-flex align-items-center">
+                                <div class="students-three-counts d-flex align-items-center">
+                                  <img src="assets/img/icon-three/student.svg" alt="">
+                                  <p>{{data.students}} Students</p>
+                                </div>
+                              </div>
+                              <div class="price-three-group d-flex align-items-center justify-content-between justify-content-between">
+                                <div class="price-three-view d-flex align-items-center">
+                                  <div class="course-price-three">
+                                    <h3>{{data.currentamt}} <span>$99.00</span></h3>
+                                  </div>
+                                </div>
+                                <div class="price-three-time d-inline-flex align-items-center">
+                                  <i class="fa-regular fa-clock me-2"></i>
+                                  <span>6hr 30min</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    }
+                    <!-- /Col -->
+
+
+
+                  </div>
+                </div>
+              </div>
+              <!-- /All -->
+
+              <!-- Most popular -->
+              <div class="tab-pane fade" id="mostpopulartab" >
+                <div class="all-course">
+                  <div class="row">
+
+                    <!-- Col -->
+                    @for (data of tab2; track data) {
+                      <div class="col-xl-3 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                        <div class="course-box-three">
+                          <div class="course-three-item">
+                            <div class="course-three-img">
+                              <a [routerLink]="routes.page_course_details">
+                                <img class="img-fluid" alt="" src="assets/img/course/{{data.courseimg}}">
+                              </a>
+                              <div class="heart-three">
+                                <a href="javascript:void(0);"><i class="fa-regular fa-heart"></i></a>
+                              </div>
+                            </div>
+                            <div class="course-three-content">
+                              <div class="course-group-three">
+                                <div class="group-three-img">
+                                  <a [routerLink]="routes.instructor_instructor_profile"><img src="assets/img/user/{{data.avatar}}" alt="" class="img-fluid"></a>
+                                </div>
+                              </div>
+                              <div class="course-three-text">
+                                <a [routerLink]="routes.page_course_details">
+                                  <p>{{data.title}}</p>
+                                  <h3 class="title instructor-text">{{data.content}}</h3>
+                                </a>
+                              </div>
+                              <div class="student-counts-info d-flex align-items-center">
+                                <div class="students-three-counts d-flex align-items-center">
+                                  <img src="assets/img/icon-three/student.svg" alt="">
+                                  <p>{{data.students}} Students</p>
+                                </div>
+                              </div>
+                              <div class="price-three-group d-flex align-items-center justify-content-between justify-content-between">
+                                <div class="price-three-view d-flex align-items-center">
+                                  <div class="course-price-three">
+                                    <h3>{{data.currentamt}} <span>$99.00</span></h3>
+                                  </div>
+                                </div>
+                                <div class="price-three-time d-inline-flex align-items-center">
+                                  <i class="fa-regular fa-clock me-2"></i>
+                                  <span>6hr 30min</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    }
+                    <!-- /Col -->
+
+
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Most popular -->
+
+              <!-- Business -->
+              <div class="tab-pane fade" id="businesstab">
+                <div class="businesstab">
+                  <div class="row">
+
+                    <!-- Col -->
+                    @for (data of tab3; track data) {
+                      <div class="col-xl-3 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                        <div class="course-box-three">
+                          <div class="course-three-item">
+                            <div class="course-three-img">
+                              <a [routerLink]="routes.page_course_details">
+                                <img class="img-fluid" alt="" src="assets/img/course/{{data.courseimg}}">
+                              </a>
+                              <div class="heart-three">
+                                <a href="javascript:void(0);"><i class="fa-regular fa-heart"></i></a>
+                              </div>
+                            </div>
+                            <div class="course-three-content">
+                              <div class="course-group-three">
+                                <div class="group-three-img">
+                                  <a [routerLink]="routes.instructor_instructor_profile"><img src="assets/img/user/{{data.avatar}}" alt="" class="img-fluid"></a>
+                                </div>
+                              </div>
+                              <div class="course-three-text">
+                                <a [routerLink]="routes.page_course_details">
+                                  <p>{{data.title}}</p>
+                                  <h3 class="title instructor-text">{{data.content}}</h3>
+                                </a>
+                              </div>
+                              <div class="student-counts-info d-flex align-items-center">
+                                <div class="students-three-counts d-flex align-items-center">
+                                  <img src="assets/img/icon-three/student.svg" alt="">
+                                  <p>{{data.students}} Students</p>
+                                </div>
+                              </div>
+                              <div class="price-three-group d-flex align-items-center justify-content-between justify-content-between">
+                                <div class="price-three-view d-flex align-items-center">
+                                  <div class="course-price-three">
+                                    <h3>{{data.currentamt}} <span>$99.00</span></h3>
+                                  </div>
+                                </div>
+                                <div class="price-three-time d-inline-flex align-items-center">
+                                  <i class="fa-regular fa-clock me-2"></i>
+                                  <span>6hr 30min</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    }
+                    <!-- /Col -->
+
+
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Business -->
+
+              <!-- Design -->
+              <div class="tab-pane fade" id="designtab">
+                <div class="designtab">
+                  <div class="row">
+
+                    <!-- Col -->
+                    @for (data of tab4; track data) {
+                      <div class="col-xl-3 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                        <div class="course-box-three">
+                          <div class="course-three-item">
+                            <div class="course-three-img">
+                              <a [routerLink]="routes.page_course_details">
+                                <img class="img-fluid" alt="" src="assets/img/course/{{data.courseimg}}">
+                              </a>
+                              <div class="heart-three">
+                                <a href="javascript:void(0);"><i class="fa-regular fa-heart"></i></a>
+                              </div>
+                            </div>
+                            <div class="course-three-content">
+                              <div class="course-group-three">
+                                <div class="group-three-img">
+                                  <a [routerLink]="routes.instructor_instructor_profile"><img src="assets/img/user/{{data.avatar}}" alt="" class="img-fluid"></a>
+                                </div>
+                              </div>
+                              <div class="course-three-text">
+                                <a [routerLink]="routes.page_course_details">
+                                  <p>{{data.title}}</p>
+                                  <h3 class="title instructor-text">{{data.content}}</h3>
+                                </a>
+                              </div>
+                              <div class="student-counts-info d-flex align-items-center">
+                                <div class="students-three-counts d-flex align-items-center">
+                                  <img src="assets/img/icon-three/student.svg" alt="">
+                                  <p>{{data.students}} Students</p>
+                                </div>
+                              </div>
+                              <div class="price-three-group d-flex align-items-center justify-content-between justify-content-between">
+                                <div class="price-three-view d-flex align-items-center">
+                                  <div class="course-price-three">
+                                    <h3>{{data.currentamt}} <span>$99.00</span></h3>
+                                  </div>
+                                </div>
+                                <div class="price-three-time d-inline-flex align-items-center">
+                                  <i class="fa-regular fa-clock me-2"></i>
+                                  <span>6hr 30min</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    }
+                    <!-- /Col -->
+
+
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Design -->
+
+              <!-- Music -->
+              <div class="tab-pane fade" id="musictab">
+                <div class="music-label">
+                  <div class="row">
+
+                    <!-- Col -->
+                    @for (data of tab5; track data) {
+                      <div class="col-xl-3 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                        <div class="course-box-three">
+                          <div class="course-three-item">
+                            <div class="course-three-img">
+                              <a [routerLink]="routes.page_course_details">
+                                <img class="img-fluid" alt="" src="assets/img/course/{{data.courseimg}}">
+                              </a>
+                              <div class="heart-three">
+                                <a href="javascript:void(0);"><i class="fa-regular fa-heart"></i></a>
+                              </div>
+                            </div>
+                            <div class="course-three-content">
+                              <div class="course-group-three">
+                                <div class="group-three-img">
+                                  <a [routerLink]="routes.instructor_instructor_profile"><img src="assets/img/user/{{data.avatar}}" alt="" class="img-fluid"></a>
+                                </div>
+                              </div>
+                              <div class="course-three-text">
+                                <a [routerLink]="routes.page_course_details">
+                                  <p>{{data.title}}</p>
+                                  <h3 class="title instructor-text">{{data.content}}</h3>
+                                </a>
+                              </div>
+                              <div class="student-counts-info d-flex align-items-center">
+                                <div class="students-three-counts d-flex align-items-center">
+                                  <img src="assets/img/icon-three/student.svg" alt="">
+                                  <p>{{data.students}} Students</p>
+                                </div>
+                              </div>
+                              <div class="price-three-group d-flex align-items-center justify-content-between justify-content-between">
+                                <div class="price-three-view d-flex align-items-center">
+                                  <div class="course-price-three">
+                                    <h3>{{data.currentamt}} <span>$99.00</span></h3>
+                                  </div>
+                                </div>
+                                <div class="price-three-time d-inline-flex align-items-center">
+                                  <i class="fa-regular fa-clock me-2"></i>
+                                  <span>6hr 30min</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    }
+                    <!-- /Col -->
+
+
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Music -->
+
+              <!-- Programmiing -->
+              <div class="tab-pane fade" id="programmingtab">
+                <div class="programmingtab">
+                  <div class="row">
+
+                    <!-- Col -->
+                    @for (data of tab6; track data) {
+                      <div class="col-xl-3 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                        <div class="course-box-three">
+                          <div class="course-three-item">
+                            <div class="course-three-img">
+                              <a [routerLink]="routes.page_course_details">
+                                <img class="img-fluid" alt="" src="assets/img/course/{{data.courseimg}}">
+                              </a>
+                              <div class="heart-three">
+                                <a href="javascript:void(0);"><i class="fa-regular fa-heart"></i></a>
+                              </div>
+                            </div>
+                            <div class="course-three-content">
+                              <div class="course-group-three">
+                                <div class="group-three-img">
+                                  <a [routerLink]="routes.instructor_instructor_profile"><img src="assets/img/user/{{data.avatar}}" alt="" class="img-fluid"></a>
+                                </div>
+                              </div>
+                              <div class="course-three-text">
+                                <a [routerLink]="routes.page_course_details">
+                                  <p>{{data.title}}</p>
+                                  <h3 class="title instructor-text">{{data.content}}</h3>
+                                </a>
+                              </div>
+                              <div class="student-counts-info d-flex align-items-center">
+                                <div class="students-three-counts d-flex align-items-center">
+                                  <img src="assets/img/icon-three/student.svg" alt="">
+                                  <p>{{data.students}} Students</p>
+                                </div>
+                              </div>
+                              <div class="price-three-group d-flex align-items-center justify-content-between justify-content-between">
+                                <div class="price-three-view d-flex align-items-center">
+                                  <div class="course-price-three">
+                                    <h3>{{data.currentamt}} <span>$99.00</span></h3>
+                                  </div>
+                                </div>
+                                <div class="price-three-time d-inline-flex align-items-center">
+                                  <i class="fa-regular fa-clock me-2"></i>
+                                  <span>6hr 30min</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    }
+                    <!-- /Col -->
+
+
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Programmiing -->
+
+              <!-- Database -->
+              <div class="tab-pane fade" id="databasetab">
+                <div class="databasetab">
+                  <div class="row">
+
+                    <!-- Col -->
+                    @for (data of tab7; track data) {
+                      <div class="col-xl-3 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                        <div class="course-box-three">
+                          <div class="course-three-item">
+                            <div class="course-three-img">
+                              <a [routerLink]="routes.page_course_details">
+                                <img class="img-fluid" alt="" src="assets/img/course/{{data.courseimg}}">
+                              </a>
+                              <div class="heart-three">
+                                <a href="javascript:void(0);"><i class="fa-regular fa-heart"></i></a>
+                              </div>
+                            </div>
+                            <div class="course-three-content">
+                              <div class="course-group-three">
+                                <div class="group-three-img">
+                                  <a [routerLink]="routes.instructor_instructor_profile"><img src="assets/img/user/{{data.avatar}}" alt="" class="img-fluid"></a>
+                                </div>
+                              </div>
+                              <div class="course-three-text">
+                                <a [routerLink]="routes.page_course_details">
+                                  <p>{{data.title}}</p>
+                                  <h3 class="title instructor-text">{{data.content}}</h3>
+                                </a>
+                              </div>
+                              <div class="student-counts-info d-flex align-items-center">
+                                <div class="students-three-counts d-flex align-items-center">
+                                  <img src="assets/img/icon-three/student.svg" alt="">
+                                  <p>{{data.students}} Students</p>
+                                </div>
+                              </div>
+                              <div class="price-three-group d-flex align-items-center justify-content-between justify-content-between">
+                                <div class="price-three-view d-flex align-items-center">
+                                  <div class="course-price-three">
+                                    <h3>{{data.currentamt}} <span>$99.00</span></h3>
+                                  </div>
+                                </div>
+                                <div class="price-three-time d-inline-flex align-items-center">
+                                  <i class="fa-regular fa-clock me-2"></i>
+                                  <span>6hr 30min</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    }
+                    <!-- /Col -->
+
+
+
+                  </div>
+                </div>
+              </div>
+              <!-- /Database -->
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Courses -->
+
+<!-- Call to Action -->
+<section class="home-three-transform">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center">
+      <div class="col-lg-9 col-md-8 col-sm-12">
+        <div class="cta-content">
+          <h2>Transform Access To Education</h2>
+          <p>Create an account to receive our newsletter, course recommendations and promotions.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12">
+        <div class="transform-button-three">
+          <a [routerLink]="routes.register" class="btn btn-action">Get Started Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Call to Action -->
+
+<!-- Acheive you Goals  -->
+<section class="home-three-goals">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Col -->
+      <div class="col-xl-3 col-lg-12 col-md-12" data-aos="fade-down">
+        <div class="acheive-goals-main">
+          <h2>Acheive you Goals  with DreamsLMS</h2>
+        </div>
+      </div>
+      <!-- /Col -->
+
+      <!-- Col -->
+      <div class="col-xl-3 col-lg-4 col-md-4 col-12" data-aos="fade-down">
+        <div class="acheive-goals">
+          <div class="acheive-elips-one">
+            <img src="assets/img/icon-three/ellipse-1.svg" alt="">
+          </div>
+          <div class="acheive-goals-content text-center course-count ms-0">
+            <h4><span [countUp]="253085" [options]="{ enableScrollSpy: true }">0</span></h4>
+            <p>Students Enrolled all over World</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Col -->
+
+      <!-- Col -->
+      <div class="col-xl-3 col-lg-4 col-md-4 col-12" data-aos="fade-down">
+        <div class="acheive-goals">
+          <div class="acheive-elips-two">
+            <img src="assets/img/icon-three/ellipse-2.svg" alt="">
+          </div>
+          <div class="acheive-goals-content text-center course-count ms-0">
+            <h4><span [countUp]="1205" [options]="{ enableScrollSpy: true }">0</span></h4>
+            <p>Total Courses on our Platform</p>
+          </div>
+        </div>
+      </div>
+      <!-- /Col -->
+
+      <!-- Col -->
+      <div class="col-xl-3 col-lg-4 col-md-4 col-12" data-aos="fade-down">
+        <div class="acheive-goals">
+          <div class="acheive-elips-three">
+            <img src="assets/img/icon-three/ellipse-3.svg" alt="">
+          </div>
+          <div class="acheive-goals-content text-center course-count ms-0">
+            <h4><span [countUp]="56" [options]="{ enableScrollSpy: true }">0</span></h4>
+            <p>Countries of Students </p>
+          </div>
+        </div>
+      </div>
+      <!-- /Col -->
+
+    </div>
+  </div>
+</section>
+<!-- /Acheive you Goals  -->
+
+<!-- Accelerate cloud -->
+<section class="accelerate-cloud-three">
+  <div class="container">
+    <div class="shapes-three-right">
+      <img class="accelerate-one" src="assets/img/bg/shape-1.png" alt="">
+      <img class="accelerate-two" src="assets/img/bg/pattern-03.png" alt="">
+    </div>
+    <div class="shapes-three-left">
+      <img class="accelerate-three" src="assets/img/bg/pattern-02.png" alt="">
+      <img class="accelerate-four" src="assets/img/bg/shape-2.png" alt="">
+      <img class="accelerate-five" src="assets/img/bg/pattern-04.png" alt="">
+    </div>
+    <div class="home-three-head section-header-title" data-aos="fade-up">
+      <div class="row align-items-center d-flex justify-content-between">
+        <div class="col-lg-6 col-md-12">
+          <div class="home-three-head">
+            <h2 class="text-white">Accelerate cloud success with hands-on learning at scaler</h2>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <p class="accelerate-three-business">96% of eLearning for Business customers see improved results within six months. Whether you’re a team of 10 or 10,000, faster cloud fluency starts here.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Award Winning -->
+    <div class="award-one">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-aos="fade-right">
+          <div class="award-three-images-one">
+            <img class="img-fluid" src="assets/img/students/award-01.png" alt="image-banner" title="image-banner">
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+          <div class="award-three-content-one">
+            <div class="award-list-info" data-aos="fade-up">
+              <div class="award-win-icon">
+                <img src="assets/img/icon-three/award.svg" alt="certified">
+              </div>
+              <div class="award-list-content">
+                <h2>Award Winning Course Management</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam dolor fermentum massa viverra congue proin. A volutpat eget ultrices velit nunc orci. Commodo quis integer a felis ac vel mauris a morbi. Scelerisque </p>
+              </div>
+            </div>
+
+            <div class="award-list d-flex align-items-center">
+              <span class="award-icon">
+                <img src="assets/img/icon-three/check-round-1.svg" alt="" class="img-fluid">
+              </span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="award-list d-flex align-items-center">
+              <span class="award-icon">
+                <img src="assets/img/icon-three/check-round-1.svg" alt="" class="img-fluid">
+              </span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="award-list mb-0 d-flex align-items-center" data-aos="fade-up">
+              <span class="award-icon">
+                <img src="assets/img/icon-three/check-round-1.svg" alt="" class="img-fluid">
+              </span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Award Winning -->
+
+    <!-- Learn Anything -->
+    <div class="learn-anything">
+      <div class="row align-items-center">
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+          <div class="award-three-content-two">
+            <div class="award-list-info">
+              <div class="award-win-icon">
+                <img class="img-fluid" src="assets/img/icon-three/time.svg" alt="certified">
+              </div>
+              <div class="award-list-content">
+                <h2>Learn anything from anywhere anytime</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam dolor fermentum massa viverra congue proin. A volutpat eget ultrices velit nunc orci. Commodo quis integer a felis ac vel mauris a morbi. Scelerisque </p>
+              </div>
+            </div>
+
+            <div class="award-list d-flex align-items-center">
+              <span class="award-icon">
+                <img src="assets/img/icon-three/check-round-2.svg" alt="" class="img-fluid">
+              </span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="award-list d-flex align-items-center">
+              <span class="award-icon">
+                <img src="assets/img/icon-three/check-round-2.svg" alt="" class="img-fluid">
+              </span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="award-list d-flex align-items-center">
+              <span class="award-icon">
+                <img src="assets/img/icon-three/check-round-2.svg" alt="" class="img-fluid">
+              </span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12"  data-aos="fade-right">
+          <div class="award-three-images-two">
+            <img class="img-fluid" src="assets/img/students/learn-anything.png" alt="image-banner" title="image-banner">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Learn Anything -->
+
+    <!-- development-carrer-->
+    <div class="development-carrer">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-aos="fade-right">
+          <div class="award-three-images-three">
+            <img class="img-fluid" src="assets/img/students/certification.png" alt="image-banner" title="image-banner">
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12" data-aos="fade-up">
+          <div class="award-three-content-one">
+            <div class="award-list-info">
+              <div class="award-win-icon">
+                <img class="img-fluid" src="assets/img/icon-three/winning.svg" alt="certified">
+              </div>
+              <div class="award-list-content">
+                <h2>Certification for solid development of your Carrer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam dolor fermentum massa viverra congue proin. A volutpat eget ultrices velit nunc orci. Commodo quis integer a felis ac vel mauris a morbi. Scelerisque </p>
+              </div>
+            </div>
+
+            <div class="award-list d-flex align-items-center">
+              <span class="award-icon">
+                <img src="assets/img/icon-three/check-round-3.svg" alt="" class="img-fluid">
+              </span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="award-list d-flex align-items-center">
+              <span class="award-icon">
+                <img src="assets/img/icon-three/check-round-3.svg" alt="" class="img-fluid">
+              </span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /development-carrer -->
+
+  </div>
+</section>
+<!-- Accelerate cloud -->
+
+<!-- Trending Courses  Three -->
+<section class="home-three-trending">
+  <div class="container">
+    <div class="row">
+      <div class="home-three-head section-header-title" data-aos="fade-up">
+        <div class="row align-items-center d-flex justify-content-between">
+          <div class="col-lg-12">
+            <h2>Most Trending Courses</h2>
+          </div>
+        </div>
+      </div>
+      <owl-carousel-o [options]="trendingOption" class="home-three-trending-course">
+        <ng-container >
+          @for (data of trending_course; track data) {
+            <ng-template carouselSlide >
+              <!-- Carousel Item -->
+              <div class="trending-three-item">
+                <div class="trending-content-top " [ngClass]="data.class">
+                  <div class="course-title-one">
+                    <a [routerLink]="routes.page_course_details">{{data.badge}}</a>
+                  </div>
+                  <div class="trending-three-text">
+                    <a [routerLink]="routes.page_course_details">
+                      <h3 class="title instructor-text">{{data.title}}</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam dolor
+                      </p>
+                    </a>
+                  </div>
+                  <div class="trending-counts-info d-flex align-items-center justify-content-between">
+                    <div class="trending-three-counts d-flex align-items-center">
+                      <img src="assets/img/icon-three/student-icon.svg" alt="student-icon">
+                      <p>{{data.students}} Students</p>
+                    </div>
+                    <div class="price-three-time d-inline-flex align-items-center">
+                      <i class="fa-regular fa-clock me-2"></i>
+                      <span>{{data.time}}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="trending-content-footer">
+                  <div class="trending-price-group d-flex align-items-center justify-content-between">
+                    <div class="trending-group-view">
+                      <div class="trending-price-three">
+                        <h3>${{data.rate}}</h3>
+                        <span>$99.00</span>
+                      </div>
+                    </div>
+                    <div class="trending-footer-img">
+                      <a [routerLink]="routes.page_course_details"><img src="assets/img/profiles/{{data.avator}}" alt="img"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Carousel Item -->
+            </ng-template>
+          }
+
+
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+    <!-- /Favourite Course -->
+  </div>
+</section>
+<!-- Feature Course -->
+
+
+<section class="gallery-three">
+  <div class="container">
+    <div class="home-three-head section-header-title" data-aos="fade-up">
+      <div class="row align-items-center d-flex justify-content-between">
+        <div class="col-lg-6 col-sm-12">
+          <h2>Courses taught by real instructor</h2>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="see-all">
+            <a [routerLink]="routes.instructor_list">See all<span class="see-all-icon"><i class="fas fa-arrow-right"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="courses-gallery-three">
+      <div class="row">
+        <!-- Col -->
+        <div class="col-lg-5 col-md-5">
+          <div class="row">
+            <div class="col-lg-7 col-md-7">
+              <div class="gallery-three-img-item">
+                <div class="content-three-main">
+                  <div class="gallery-img">
+                    <img src="assets/img/gallery/gallery-1.jpg" alt="Instructor">
+                  </div>
+                  <div class="content-three-overlay">
+                    <div class="content-three-text">
+                      <div>
+                        <h6>Patricia</h6>
+                        <p>Node Js</p>
+                      </div>
+                      <div>
+                        <a [routerLink]="routes.instructor_list" class="content-three-arrows">
+                          <span><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-5">
+              <div class="gallery-three-img-item">
+                <div class="content-three-main">
+                  <div class="gallery-img">
+                    <img src="assets/img/gallery/gallery-2.jpg" alt="Instructor">
+                  </div>
+                  <div class="content-three-overlay">
+                    <div class="content-three-text">
+                      <div>
+                        <h6>Patricia</h6>
+                        <p>Node Js</p>
+                      </div>
+                      <div>
+                        <a [routerLink]="routes.instructor_list" class="content-three-arrows">
+                          <span><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-5">
+              <div class="gallery-three-img-item mb-0">
+                <div class="content-three-main">
+                  <div class="gallery-img">
+                    <img src="assets/img/gallery/gallery-3.jpg" alt="Instructor">
+                  </div>
+                  <div class="content-three-overlay">
+                    <div class="content-three-text">
+                      <div>
+                        <h6>Patricia</h6>
+                        <p>Node Js</p>
+                      </div>
+                      <div>
+                        <a [routerLink]="routes.instructor_list" class="content-three-arrows">
+                          <span><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7">
+              <div class="gallery-three-img-item mb-0">
+                <div class="content-three-main">
+                  <div class="gallery-img">
+                    <img src="assets/img/gallery/gallery-4.jpg" alt="Instructor">
+                  </div>
+                  <div class="content-three-overlay">
+                    <div class="content-three-text">
+                      <div>
+                        <h6>Patricia</h6>
+                        <p>Node Js</p>
+                      </div>
+                      <div>
+                        <a [routerLink]="routes.instructor_list" class="content-three-arrows">
+                          <span><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Col -->
+
+        <!-- Col -->
+        <div class="col-lg-3 col-md-3">
+          <div class="gallery-three-img-item mb-0">
+            <div class="content-three-main">
+              <div class="gallery-img">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="Instructor">
+              </div>
+              <div class="content-three-overlay">
+                <div class="content-three-text">
+                  <div>
+                    <h6>Patricia</h6>
+                    <p>Node Js</p>
+                  </div>
+                  <div>
+                    <a [routerLink]="routes.instructor_list" class="content-three-arrows">
+                      <span><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Col -->
+
+        <!-- Col -->
+        <div class="col-lg-4 col-md-4">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="gallery-three-img-item">
+                <div class="content-three-main">
+                  <div class="gallery-img">
+                    <img src="assets/img/gallery/gallery-6.jpg" alt="Instructor">
+                  </div>
+                  <div class="content-three-overlay">
+                    <div class="content-three-text">
+                      <div>
+                        <h6>Patricia</h6>
+                        <p>Node Js</p>
+                      </div>
+                      <div>
+                        <a [routerLink]="routes.instructor_list" class="content-three-arrows">
+                          <span><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="gallery-three-img-item mb-0">
+                <div class="content-three-main">
+                  <div class="gallery-img">
+                    <img src="assets/img/gallery/gallery-7.jpg" alt="Instructor">
+                  </div>
+                  <div class="content-three-overlay">
+                    <div class="content-three-text">
+                      <div>
+                        <h6>Patricia</h6>
+                        <p>Node Js</p>
+                      </div>
+                      <div>
+                        <a [routerLink]="routes.instructor_list" class="content-three-arrows">
+                          <span><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="gallery-three-img-item mb-0">
+                <div class="content-three-main">
+                  <div class="gallery-img">
+                    <img src="assets/img/gallery/gallery-8.jpg" alt="Instructor">
+                  </div>
+                  <div class="content-three-overlay">
+                    <div class="content-three-text">
+                      <div>
+                        <h6>Patricia</h6>
+                        <p>Node Js</p>
+                      </div>
+                      <div>
+                        <a [routerLink]="routes.instructor_list" class="content-three-arrows">
+                          <span><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Col -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Become An Instructor -->
+<section class="home-three-become">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8 col-md-8"  data-aos="fade-up">
+        <div class="become-content-three">
+          <h2>Become An Instructor</h2>
+          <p>Top instructors from around the world teach millions of students on DreamsLMS.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4"  data-aos="fade-up">
+        <div class="become-button-three">
+          <a [routerLink]="routes.register" class="btn btn-become">Get Started Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Become An Instructor -->
+
+<!-- Leading Companies -->
+<section class="lead-companies-three">
+  <div class="container">
+    <div class="home-three-head section-header-title aos-init aos-animate">
+      <div class="row align-items-center d-flex justify-content-between">
+        <div class="col-lg-12"  data-aos="fade-up">
+          <h2>500+ Leading Universities And Companies</h2>
+        </div>
+      </div>
+    </div>
+    <div class="m-0 p-0 lead-group aos" data-aos="fade-up">
+      <owl-carousel-o [options]="leadingOption" class="lead-group-slider">
+        <ng-container >
+          <ng-template carouselSlide >
+            <div class="lead-img">
+              <img class="img-fluid" alt="" src="assets/img/lead-01.png">
+            </div>
+          </ng-template>
+          <ng-template carouselSlide >
+            <div class="lead-img">
+              <img class="img-fluid" alt="" src="assets/img/lead-02.png">
+            </div>
+          </ng-template>
+          <ng-template carouselSlide >
+            <div class="lead-img">
+              <img class="img-fluid" alt="" src="assets/img/lead-03.png">
+            </div>
+          </ng-template>
+          <ng-template carouselSlide >
+            <div class="lead-img">
+              <img class="img-fluid" alt="" src="assets/img/lead-04.png">
+            </div>
+          </ng-template>
+          <ng-template carouselSlide >
+            <div class="lead-img">
+              <img class="img-fluid" alt="" src="assets/img/lead-05.png">
+            </div>
+          </ng-template>
+          <ng-template carouselSlide >
+            <div class="lead-img">
+              <img class="img-fluid" alt="" src="assets/img/lead-06.png">
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+<!-- /Leading Companies -->
+
+<!-- Testimonial -->
+<section class="testimonial-three">
+  <div class="container">
+    <div class="testimonial-pattern">
+      <img class="pattern-left img-fluid" alt="" src="assets/img/bg/pattern-05.svg">
+      <img class="pattern-right img-fluid" alt="" src="assets/img/bg/pattern-06.svg">
+    </div>
+    <div class="testimonial-three-content">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-12 col-md-12" data-aos="fade-down">
+          <div class="become-content">
+            <h2 class="aos-init aos-animate">They Trusted us</h2>
+            <h4 class="aos-init aos-animate">We are a very happy because we have a happy customer</h4>
+          </div>
+          <a [routerLink]="routes.instructor_instructor_profile" class="btn btn-action aos-init aos-animate" data-aos="fade-up">View all Testimonail</a>
+        </div>
+        <div class="col-xl-6 col-lg-12 col-md-12" data-aos="fade-down">
+          <div class="swiper-testimonial-three">
+            <swiper	[config]="config" >
+
+              @for (data of swiper; track data) {
+                <ng-template swiperSlide>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item-five">
+                      <div class="testimonial-quote">
+                        <img class="quote img-fluid" alt="" src="assets/img/bg/quote.svg">
+                      </div>
+                      <div class="testimonial-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas pretium feugiat tellus eget vitae sagittis id in. In in tempor ac dignissim at. Scelerisque sociis consequat sit dolor. Vitae donec porttitor risus tellus eget vitae sagittis id in. In in tempor ac dignissim at. Scelerisque sociis consequat </p>
+                      </div>
+                      <div class="testimonial-ratings">
+                        <div class="rating">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <p class="d-inline-block">{{data.rating}}<span>ratings</span></p>
+                        </div>
+                      </div>
+                      <div class="testimonial-users">
+                        <div class="imgbx">
+                          <img class="" alt="" src="assets/img/profiles/{{data.avatar}}">
+                        </div>
+                        <div class="d-block">
+                          <h6>{{data.name}}</h6>
+                          <p>{{data.role}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              }
+
+            </swiper>
+            <div class="testimonial-bottom-nav">
+              <div class="slide-next-btn testimonial-next-pre"><i class="fas fa-arrow-left"></i></div>
+              <div class="slide-prev-btn testimonial-next-pre"><i class="fas fa-arrow-right"></i></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/Testimonial -->
+
+<!-- Latest Blog -->
+<section class="latest-blog-three">
+  <div class="container">
+    <div class="home-three-head section-header-title" data-aos="fade-up">
+      <div class="row align-items-center d-flex justify-content-between">
+        <div class="col-lg-6 col-md-8">
+          <h2>Latest news & Events</h2>
+        </div>
+        <div class="col-lg-6 col-md-4">
+          <div class="see-all">
+            <a [routerLink]="routes.blog_list">See all<span class="see-all-icon"><i class="fas fa-arrow-right"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="latest-blog-main">
+      <div class="row">
+        <div class="col-xl-6 col-lg-12 col-md-12">
+          <div class="row">
+            <div class="col-md-12" data-aos="fade-down">
+              <div class="event-blog-three blog-three-one" >
+                <div class="blog-img-three">
+                  <a [routerLink]="routes.blog_list">
+                    <img class="img-fluid" alt="" src="assets/img/blog/blog-20.jpg">
+                  </a>
+                </div>
+                <div class="latest-blog-content">
+                  <div class="event-three-title">
+                    <div class="event-span-three">
+                      <span class="span-name-three badge-green">Sales</span>
+                    </div>
+                    <a [routerLink]="routes.blog_list">
+                      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida..Lorem ipsum dolor sit amet, </p>
+                    </a>
+                    <div class="blog-student-count">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>Jun 15, 2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="fade-down">
+              <div class="event-blog-three blog-three-two">
+                <div class="blog-img-three">
+                  <a [routerLink]="routes.blog_list">
+                    <img class="img-fluid" alt="" src="assets/img/blog/blog-21.jpg">
+                  </a>
+                </div>
+                <div class="latest-blog-content">
+                  <div class="event-three-title">
+                    <div class="event-span-three">
+                      <span class="span-name-three badge-info">Sales</span>
+                    </div>
+                    <a [routerLink]="routes.blog_list">
+                      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida..Lorem ipsum dolor sit amet, </p>
+                    </a>
+                    <div class="blog-student-count">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>Jun 15, 2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-12 col-md-12">
+          <div class="row">
+            <div class="col-md-12" data-aos="fade-down">
+              <div class="event-blog-three blog-three-three">
+                <div class="blog-img-three">
+                  <a [routerLink]="routes.blog_list">
+                    <img class="img-fluid" alt="" src="assets/img/blog/blog-22.jpg">
+                  </a>
+                </div>
+                <div class="latest-blog-content">
+                  <div class="event-three-title">
+                    <div class="event-span-three">
+                      <span class="span-name-three badge-info">Sales</span>
+                    </div>
+                    <a [routerLink]="routes.blog_list">
+                      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida..Lorem ipsum dolor sit amet, </p>
+                    </a>
+                    <div class="blog-student-count">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>Jun 15, 2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="fade-down">
+              <div class="event-blog-three blog-three-four">
+                <div class="blog-img-three">
+                  <a [routerLink]="routes.blog_list">
+                    <img class="img-fluid" alt="" src="assets/img/blog/blog-23.jpg">
+                  </a>
+                </div>
+                <div class="latest-blog-content">
+                  <div class="event-three-title">
+                    <div class="event-span-three">
+                      <span class="span-name-three badge-info">Sales</span>
+                    </div>
+                    <a [routerLink]="routes.blog_list">
+                      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida..Lorem ipsum dolor sit amet, </p>
+                    </a>
+                    <div class="blog-student-count">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>Jun 15, 2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="fade-down">
+              <div class="event-blog-three blog-three-five">
+                <div class="blog-img-three">
+                  <a [routerLink]="routes.blog_list">
+                    <img class="img-fluid" alt="" src="assets/img/blog/blog-24.jpg">
+                  </a>
+                </div>
+                <div class="latest-blog-content">
+                  <div class="event-three-title">
+                    <div class="event-span-three">
+                      <span class="span-name-three badge-yellow">Sales</span>
+                    </div>
+                    <a [routerLink]="routes.blog_list">
+                      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida..Lorem ipsum dolor sit amet, </p>
+                    </a>
+                    <div class="blog-student-count">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span>Jun 15, 2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Latest Blog -->
+
+<app-footer></app-footer>

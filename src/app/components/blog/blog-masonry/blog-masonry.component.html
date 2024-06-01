@@ -1,0 +1,65 @@
+<!-- Blog Grid -->
+<section class="course-content">
+  <div class="container">
+    <div class="row masonry-blog-blk">
+      @for (data of blogMasonry; track data) {
+        <div class="col-lg-4 col-md-6">
+          <!-- Blog Post -->
+          <div class="blog grid-blog">
+            <div class="blog-image">
+              <a [routerLink]="routes.blog_details"><img class="img-fluid" [src]="data.img1"
+              alt="Post Image"></a>
+            </div>
+            <div class="blog-grid-box masonry-box">
+              <div class="blog-info clearfix">
+                <div class="post-left">
+                  <ul>
+                    <li><img class="img-fluid" [src]="data.img3" alt="">{{data.date1}}</li>
+                    <li><img class="img-fluid" [src]="data.img4" alt="">{{data.sub1}}</li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="blog-title"><a [routerLink]="routes.blog_details">{{data.content1}}</a></h3>
+              <div class="blog-content blog-read">
+                <p>{{data.paragraph1}}</p>
+                <a [routerLink]="routes.blog_details" class="read-more btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- /Blog Post -->
+          <!-- Blog Post -->
+          <div class="blog grid-blog">
+            <div class="blog-image">
+              <a [routerLink]="routes.blog_details"><img class="img-fluid" [src]="data.img2"
+              alt="Post Image"></a>
+            </div>
+            <div class="blog-grid-box masonry-box">
+              <div class="blog-info clearfix">
+                <div class="post-left">
+                  <ul>
+                    <li><img class="img-fluid" src="assets/img/icon/icon-22.svg" alt="">{{data.date2}}
+                    </li>
+                    <li><img class="img-fluid" src="assets/img/icon/icon-23.svg" alt="">{{data.sub2}}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h3 class="blog-title"><a [routerLink]="routes.blog_details">{{data.content1}}</a></h3>
+              <div class="blog-content blog-read">
+                <p>{{data.paragraph2}}</p>
+                <a [routerLink]="routes.blog_details" class="read-more btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- /Blog Post -->
+        </div>
+      }
+    </div>
+    <!-- Load button -->
+    <div class="load-more text-center">
+      <a href="javascript:void(0)" class="btn btn-primary">Load More</a>
+    </div>
+    <!-- /Load button -->
+  </div>
+</section>
+<!-- /Blog Grid -->

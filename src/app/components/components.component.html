@@ -1,0 +1,30 @@
+<!-- Main Wrapper -->
+<div
+  class="main-wrapper"
+  [ngClass]="{
+    'menu-opened': showMiniSidebar === true,
+    'home-two': routeStatus === 'home-two',
+    'home-three': routeStatus === 'home-three',
+    'home-five': routeStatus === 'home-four',
+    'chat-wrapper': page === 'instructor-chat' || 'student-message',
+  }"
+  >
+  @if (isuserHeader === true) {
+    <app-header></app-header>
+  }
+
+  @if (isAdminHeader) {
+    <app-admin-header></app-admin-header>
+  }
+  @if (isstudentHeader === true) {
+    <app-student-header></app-student-header>
+  }
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  <div>
+    @if (mainFooter) {
+      <app-footer></app-footer>
+    }
+  </div>
+</div>
